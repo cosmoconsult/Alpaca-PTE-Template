@@ -1,6 +1,6 @@
 # COSMO Alpaca AL-Go Per Tenant Extension Template
 
-[![Use this template](https://github.com/microsoft/AL-Go/assets/10775043/ca1ecc85-2fd3-4ab5-a866-bd2e7e80259d)](https://github.com/new?template_name=Alpaca-PTE&template_owner=cosmoconsult)
+[![Use this template](https://github.com/microsoft/AL-Go/assets/10775043/ca1ecc85-2fd3-4ab5-a866-bd2e7e80259d)](https://github.com/new?template_name=Alpaca-PTE-Template&template_owner=cosmoconsult)
 
 This template repository can be used for managing AppSource Apps for Business Central.
 
