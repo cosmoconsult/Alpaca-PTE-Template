@@ -394,7 +394,7 @@ jobs:
           artifacts: '.artifacts'
 
   PostProcess:
-    needs: [ Initialization, Build, Deploy, Deliver, DeployALDoc, CustomJob-RemoveAlpaca-Container ]
+    needs: [ Initialization, Build, Deploy, Deliver, DeployALDoc, CodeAnalysisUpload, CustomJob-RemoveAlpaca-Container ]
     if: (!cancelled())
     runs-on: [ ubuntu-latest ]
     steps:
@@ -411,11 +411,13 @@ jobs:
           telemetryScopeJson: ${{ needs.Initialization.outputs.telemetryScopeJson }}
           currentJobContext: ${{ toJson(job) }}
 
+  # DO NOT EDIT. The following job was added through a custom template.
   CustomJob-Alpaca-Initialization:
     name: 'Initialize COSMO Alpaca'
     uses: ./.github/workflows/_AlpacaInitialization.yaml
     secrets: inherit
 
+  # DO NOT EDIT. The following job was added through a custom template.
   CustomJob-CreateAlpaca-Container:
     name: 'Create COSMO Alpaca Containers'
     needs: [ Initialization, CustomJob-Alpaca-Initialization ]
@@ -426,6 +428,7 @@ jobs:
       backendUrl: ${{ needs.CustomJob-Alpaca-Initialization.outputs.backendUrl }}
       projectsJson: ${{ needs.Initialization.outputs.projects }}
 
+  # DO NOT EDIT. The following job was added through a custom template.
   CustomJob-RemoveAlpaca-Container:
     name: 'Remove COSMO Alpaca Containers'
     needs: [ Build, CustomJob-Alpaca-Initialization, CustomJob-CreateAlpaca-Container ]

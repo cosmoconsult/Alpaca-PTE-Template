@@ -87,6 +87,7 @@ jobs:
           telemetryScopeJson: ${{ steps.init.outputs.telemetryScopeJson }}
           currentJobContext: ${{ toJson(job) }}
 
+  # DO NOT EDIT. The following job was added through a custom template.
   CustomJob-Alpaca-UpdateSystemFiles:
     name: 'Update AL-Go and COSMO Alpaca System Files'
     needs: [ AddExistingAppOrTestApp ]

@@ -154,6 +154,7 @@ jobs:
           telemetryScopeJson: ${{ steps.init.outputs.telemetryScopeJson }}
           currentJobContext: ${{ toJson(job) }}
 
+  # DO NOT EDIT. The following job was added through a custom template.
   CustomJob-UpdateAlpacaFiles:
     name: "[${{ matrix.branch }}] Update COSMO Alpaca System Files"
     needs: [ Initialize ]
