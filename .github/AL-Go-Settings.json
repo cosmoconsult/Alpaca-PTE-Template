@@ -2,5 +2,5 @@
   "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v9.0/.Modules/settings.schema.json",
   "type": "PTE",
   "templateUrl": "https://github.com/cosmoconsult/Alpaca-PTE@main",
-  "templateSha": "4a8afc03662d5bf2d28aac3f5b2f9de13a4c45b0"
+  "templateSha": "bda3495d9691047e2e274a553b968ed59ca63d93"
 }
